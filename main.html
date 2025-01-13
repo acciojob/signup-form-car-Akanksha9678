@@ -4,39 +4,32 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<style>
-		.required::after{
-			content:" *";
-			font-size:14px;
-			color:black;
-		}
-	</style>
 </head>
 
 <body>
 	<form method="post">
-		<label for="name" class="required">Name:</label>
+		<label for="name">Name:</label>
 		<input type="text" id="name" placeholder="Name" required><br>
-		<label for="email" class="required">Email ID:</label>
+		<label for="email">Email ID:</label>
 	    <input type="email" id="email" placeholder="Email" required><br>
-		<label for="gender" class="required">Gender:</label><br>
+		<label for="gender">Gender:</label><br>
 	    Male:<input type="radio" name="gender" id="gender_m" required>
 	    Female:<input type="radio" name="gender" id="gender_f" required><br>
-	<select class="required">
+	<select>
 		<option>--Please choose an option--</option>
 		<option>BMW</option>
 		<option>THAR</option>
 		<option>BB</option>
 	</select><br>
-	<label for="age" class="required">Age:</label>
+	<label for="age">Age:</label>
 	<input type="number" id="age" placeholder="Age" required><br>
-	<label for="dob" class="required">Date of Birth:</label>
+	<label for="dob">Date of Birth:</label>
 	<input type="date" id="dob" required><br>
 	<label for="tel">Telephone:</label>
 	<input type="tel" id="tel" placeholder="xxx-xxx-xxxx"><br>
-	<label for="password" class="required">Password:</label>
+	<label for="password">Password:</label>
 	<input type="password" id="password" placeholder="Password" required><br>
-		<label for="tos" class="required">I agree to the TOS</label>
+		<label for="tos">I agree to the TOS</label>
 		<input type="checkbox" id="tos" required><br>
 		<input type="submit">
 	</form>
